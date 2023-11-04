@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideArt</title>
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body class="bg-gray-900 w-[100vw] duration-300 overflow-x-hidden">
+    
+   <main class="image-sec">
+    <section class="h-screen ">
+        <nav class="p-8 flex justify-between items-center relative">
+            <div>
+                <p class="text-4xl font-semibold text-white">Slid<span class="text-blue-500">Art</span></p>
+            </div>
+           <ul id="nav-links" class="text-white absolute bg-gray-950 p-6 flex flex-col justify-center items-start h-screen w-96 top-0 left-0 z-10 shadow-xl shadow-sky-500 duration-700 -translate-x-[100rem]">
+                <li class="text-4xl font-semibold uppercase  hover:translate-x-10 hover:duration-300"><a href="">Home</a></li>
+                <li class="text-4xl font-semibold uppercase mt-3 hover:translate-x-10 hover:duration-300"><a href="">About</a></li>
+                <li class="text-4xl font-semibold uppercase mt-3 hover:translate-x-10 hover:duration-300"><a href="">Features</a></li>
+                <li class="text-4xl font-semibold uppercase mt-3 hover:translate-x-10 hover:duration-300"><a href="">Contacts</a></li>
+           </ul>
+            <div >
+                <button class="dark-btn"></button>
+                <button id="btn-nav" class="relative duration-700 flex flex-col z-50">
+                    <span id="barun" class="h-1 w-8 bg-white rounded-full duration-700"></span>
+                    <span id="bardeux" class="h-1 w-8 bg-white rounded-full mt-2 duration-700"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="h-[32rem] flex flex-col justify-center p-6">
+            <h1 class="text-un text-white text-[10rem] font-bold">Creative</h1>
+            <h1 class="text-deux text-white text-[10rem] font-bold ml-32">Art by Likeur</h1>
+        </div>
+    </section>
+    <section class="flex items-center sec-deux">
+        <div class="flex justify-center p-4">
+            <div class="w-[45%] flex flex-col">
+                <div class="text-white h-screen flex flex-col justify-center p-6 opacity-0 overflow-hidden text-trois">
+                    <h1 class="text-5xl font-bold">Lorem dolore</h1>
+                    <p class="mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis placeat ullam ab assumenda repellendus veniam laudantium doloribus atque distinctio quisquam molestias voluptatibus, voluptas fuga illo deserunt architecto, fugit praesentium adipisci?</p>
+                </div>
+                <div class="text-white h-screen flex flex-col justify-center p-6 opacity-0 overflow-hidden text-quatre">
+                    <h1 class="text-5xl font-bold">Lorem dolore</h1>
+                    <p class="mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis placeat ullam ab assumenda repellendus veniam laudantium doloribus atque distinctio quisquam molestias voluptatibus, voluptas fuga illo deserunt architecto, fugit praesentium adipisci?</p>
+                </div>
+                <div class="text-white h-screen flex flex-col justify-center p-6 opacity-0 overflow-hidden text-cinq">
+                    <h1 class="text-5xl font-bold">Lorem dolore</h1>
+                    <p class="mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis placeat ullam ab assumenda repellendus veniam laudantium doloribus atque distinctio quisquam molestias voluptatibus, voluptas fuga illo deserunt architecto, fugit praesentium adipisci?</p>
+                </div>
+            </div>
+            <div class="w-[45%] overflow-hidden relative top-0 pin-sec rounded-3xl flex items-center">
+                    <img class=" art-image -translate-y-[700px] rounded-3xl border-4 " width="500" src="https://images.pexels.com/photos/6732517/pexels-photo-6732517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+
+            </div>
+        </div>
+    </section>
+
+    
+   </main>
+
+   <div class="w-screen overflow-hidden">
+    <section class="h-screen flex justify-center items-center">
+            <div class="bubble h-40 w-40 scale-0 bg-blue-600 rounded-full flex justify-center items-center">
+                <h1 class="text-white text-3xl font-bold">Go</h1>
+            </div>
+
+    </section>
+    <section class="h-screen flex flex-col items-center justify-center change">
+            <h1 class="text-white text-7xl font-bold hello">Hello </h1>
+            <h1 class="text-white text-7xl font-bold hellodeux">world </h1>
+    </section>
+   </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
+    
+    <script src="./app.js"></script>
+    <script>
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+        console.log(e)
+        })
+
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
+</body>
+</html>
